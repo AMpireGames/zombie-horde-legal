@@ -5,38 +5,54 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#1c1829">
-<meta property="og:title" content="Zombie Horde: Cannon Commander – AMpire Games">
-<meta property="og:image" content="ampire-header.jpg">
 <link rel="icon" type="image/png" href="ampire-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 <title>Privacy Policy / Datenschutz – Zombie Horde: Cannon Commander</title>
 <style>
-  :root { --bg: #1c1829; --card: #262138; --ink: #f6efe3; --muted: #bdb5cc; --yellow: #efbb3c; --green: #57d77c; --pink: #f472a6; }
+  :root { --bg: #1c1829; --card: #262138; --ink: #f6efe3; --soft: #e4dccd; --muted: #bdb5cc; --yellow: #efbb3c; --yellow-d: #b87300; --green: #57d77c; --green-d: #1e9648; --pink: #f472a6; }
   * { box-sizing: border-box; }
-  body { margin: 0; font: 16px/1.65 ui-rounded, "Nunito", "Segoe UI", system-ui, sans-serif; color: var(--ink); background: var(--bg); }
-  a { color: var(--green); }
-  .hero { background: var(--bg) url(ampire-header.jpg) center / cover no-repeat; border-bottom: 4px solid var(--yellow); aspect-ratio: 16 / 6; min-height: 150px; max-height: 340px; }
-  main { max-width: 760px; margin: 0 auto; padding: 8px 16px 64px; }
-  .brand { display: flex; align-items: center; gap: 12px; margin: 16px 0 0; color: var(--muted); font-size: .9em; }
-  .brand img { width: 44px; height: 44px; border-radius: 12px; }
-  h1 { font-size: 1.8em; line-height: 1.2; margin: .6em 0 .3em; color: var(--yellow); }
-  h2 { margin-top: 2.2em; padding-bottom: .25em; border-bottom: 3px solid var(--green); }
-  h3 { margin-bottom: .2em; color: var(--pink); }
-  nav a, .langs a { display: inline-block; margin: 0 .5em .5em 0; padding: .25em .9em; border-radius: 999px; background: var(--card); color: var(--ink); text-decoration: none; font-weight: bold; }
-  nav a:hover, .langs a:hover { background: var(--yellow); color: var(--bg); }
-  .langs { text-align: right; margin-top: 16px; } .langs a { margin: 0 0 0 .5em; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.7 "Nunito", system-ui, sans-serif; overflow-x: hidden; }
+  a { color: var(--green); } a:hover { color: #8af0a5; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+  header.top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding: 20px 0; }
+  .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); font: 700 22px "Fredoka", sans-serif; }
+  .logo:hover { color: var(--ink); }
+  .logo img { width: 44px; height: 44px; border-radius: 13px; }
+  .langs { display: flex; gap: 4px; background: var(--card); padding: 4px; border-radius: 999px; }
+  .langs button { font: 600 15px "Fredoka", sans-serif; color: var(--ink); background: none; border: 0; padding: 6px 14px; min-height: 36px; border-radius: 999px; cursor: pointer; }
+  .langs button[aria-pressed="true"] { background: var(--yellow); color: var(--bg); }
+  .intro { padding: 40px 0 8px; }
+  .eyebrow { margin: 0; font: 600 15px "Fredoka", sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--pink); }
+  h1 { margin: 8px 0 20px; font: 700 clamp(32px, 6vw, 52px)/1.1 "Fredoka", sans-serif; color: var(--yellow); }
+  .toc { display: flex; flex-wrap: wrap; gap: 10px; }
+  .toc a { display: inline-block; padding: 8px 20px; border-radius: 999px; background: var(--card); color: var(--ink); text-decoration: none; font: 600 17px "Fredoka", sans-serif; }
+  .toc a:hover { background: var(--yellow); color: var(--bg); }
+  section { margin-top: 40px; padding: clamp(22px, 4vw, 40px); border-radius: 28px; background: var(--card); scroll-margin-top: 16px; }
+  h2 { margin: 0 0 20px; padding-bottom: 12px; border-bottom: 3px solid var(--green); font: 700 clamp(26px, 4vw, 34px)/1.15 "Fredoka", sans-serif; }
+  h3 { margin: 28px 0 6px; font: 600 20px "Fredoka", sans-serif; color: var(--pink); }
+  p { margin: 0 0 12px; color: var(--soft); overflow-wrap: anywhere; }
+  .back { margin-top: 40px; }
   .js [data-lang] { display: none; } .js[data-show="de"] [data-lang="de"], .js[data-show="en"] [data-lang="en"] { display: block; }
   [data-lang="en"] { border-top: 3px solid var(--pink); margin-top: 3em; padding-top: 1em; } .js [data-lang="en"] { border: 0; margin: 0; padding: 0; }
-  footer { margin-top: 3em; color: var(--muted); font-size: .85em; text-align: center; }
+  footer { margin-top: 56px; padding: 28px 0 40px; border-top: 2px solid #2e2840; color: var(--muted); font-size: 15px; text-align: center; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--pink); outline-offset: 3px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 </style>
 </head>
 <body>
-<div class="hero" role="img" aria-label="AMpire Games"></div>
-<main>
-<p class="langs" id="langs" hidden><a href="#" data-set="de">Deutsch</a><a href="#" data-set="en">English</a></p>
+<div class="wrap">
+<header class="top">
+  <a class="logo" href="https://ampiregames.github.io/"><img src="ampire-logo.png" alt="" width="44" height="44">AMpire Games</a>
+  <span class="langs" id="langs" role="group" aria-label="Sprache / Language" hidden><button type="button" data-set="de">Deutsch</button><button type="button" data-set="en">English</button></span>
+</header>
+<main class="intro">
 <div data-lang="en" lang="en">
-<p class="brand"><img src="ampire-logo.png" alt="" width="44" height="44">AMpire Games</p>
+<p class="eyebrow">AMpire Games</p>
 <h1>Zombie Horde: Cannon Commander</h1>
-<nav><a href="#en-privacy">Privacy Policy</a><a href="#en-imprint">Imprint</a></nav>
+<nav class="toc"><a href="#en-privacy">Privacy Policy</a><a href="#en-imprint">Imprint</a></nav>
 <section id="en-privacy"><h2>Privacy Policy</h2>
 <p>As of: October 2026</p>
 <h3>1. Controller</h3>
@@ -65,11 +81,12 @@
 <p>Zombie Horde: Cannon Commander is a free entertainment game. All content has been created with care; no guarantee is given for correctness, completeness or permanent availability. Liability for intent and gross negligence remains unaffected.</p>
 <h3>Copyright</h3>
 <p>© 2026 Armin Maghsoudloo. Game idea, program code, graphics and sounds are subject to German copyright law. Third-party libraries and fonts used are under their own licenses (see “Licenses”).</p></section>
+<p class="back"><a href="https://ampiregames.github.io/">← Back to home</a></p>
 </div>
 <div data-lang="de" lang="de">
-<p class="brand"><img src="ampire-logo.png" alt="" width="44" height="44">AMpire Games</p>
+<p class="eyebrow">AMpire Games</p>
 <h1>Zombie Horde: Cannon Commander</h1>
-<nav><a href="#de-privacy">Datenschutzerklärung</a><a href="#de-imprint">Impressum</a></nav>
+<nav class="toc"><a href="#de-privacy">Datenschutzerklärung</a><a href="#de-imprint">Impressum</a></nav>
 <section id="de-privacy"><h2>Datenschutzerklärung</h2>
 <p>Stand: Oktober 2026</p>
 <h3>1. Verantwortlicher</h3>
@@ -98,20 +115,25 @@
 <p>Zombie Horde: Cannon Commander ist ein kostenloses Unterhaltungsspiel. Alle Inhalte wurden mit Sorgfalt erstellt; für Richtigkeit, Vollständigkeit und ständige Verfügbarkeit wird keine Gewähr übernommen. Die Haftung für Vorsatz und grobe Fahrlässigkeit bleibt unberührt.</p>
 <h3>Urheberrecht</h3>
 <p>© 2026 Armin Maghsoudloo. Spielidee, Programmcode, Grafiken und Sounds unterliegen dem deutschen Urheberrecht. Verwendete Fremdbibliotheken und Schriften stehen unter eigenen Lizenzen (siehe „Lizenzen“).</p></section>
+<p class="back"><a href="https://ampiregames.github.io/">← Zur Startseite</a></p>
 </div>
-<footer>© AMpire Games</footer>
 </main>
+<footer>© AMpire Games</footer>
+</div>
 <script>
   (function () {
     var root = document.documentElement;
     var saved = null;
     try { saved = localStorage.getItem('legal-lang'); } catch (e) {}
-    var show = function (l) { root.setAttribute('data-show', l); root.lang = l; try { localStorage.setItem('legal-lang', l); } catch (e) {} };
+    var btns = document.querySelectorAll('[data-set]');
+    var show = function (l) {
+      root.setAttribute('data-show', l); root.lang = l;
+      btns.forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-set') === l ? 'true' : 'false'); });
+      try { localStorage.setItem('legal-lang', l); } catch (e) {}
+    };
     root.className = 'js';
     document.getElementById('langs').hidden = false;
-    document.querySelectorAll('[data-set]').forEach(function (a) {
-      a.addEventListener('click', function (ev) { ev.preventDefault(); show(a.getAttribute('data-set')); });
-    });
+    btns.forEach(function (b) { b.addEventListener('click', function () { show(b.getAttribute('data-set')); }); });
     show(saved || (/^de/i.test(navigator.language || '') ? 'de' : 'en'));
     // Alte Links (#privacy, #imprint) auf die Abschnitte der gewählten Sprache umlenken
     var m = /^#(privacy|imprint)$/.exec(location.hash);
@@ -120,3 +142,4 @@
 </script>
 </body>
 </html>
+`;
