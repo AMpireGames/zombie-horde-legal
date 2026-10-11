@@ -93,6 +93,9 @@
       a.addEventListener('click', function (ev) { ev.preventDefault(); show(a.getAttribute('data-set')); });
     });
     show(saved || (/^de/i.test(navigator.language || '') ? 'de' : 'en'));
+    // Alte Links (#privacy, #imprint) auf die Abschnitte der gewählten Sprache umlenken
+    var m = /^#(privacy|imprint)$/.exec(location.hash);
+    if (m) { var el = document.getElementById(root.lang + '-' + m[1]); if (el) el.scrollIntoView(); }
   })();
 </script>
 </body>
